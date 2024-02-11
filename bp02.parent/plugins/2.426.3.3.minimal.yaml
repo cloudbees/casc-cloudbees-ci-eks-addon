@@ -35,7 +35,6 @@ plugins:
   - id: javadoc # cap lst dep src min
   - id: jsch # cap lst dep src min
   - id: junit # cap lst dep src min
-  - id: ldap # cap lst src min gen
   - id: managed-master-hibernation # cap lst src min gen
   - id: momentjs # 3rd lst src min gen
   - id: operations-center-notification # cap lst src min gen
