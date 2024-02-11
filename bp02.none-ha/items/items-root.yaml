@@ -132,7 +132,7 @@ items:
         pipeline {
             agent{
                 label {
-                    label 'maven-spot'
+                    label 'maven-and-go-ondemand'
                     retries 3
                 }
             } 
