@@ -40,7 +40,7 @@ kube:
       - containers:
           - args: "99d"
             command: "sleep"
-            image: "maven:3.8.1-jdk-8"
+            image: "maven:3.9.6-amazoncorretto-8"
             name: "maven"
             ttyEnabled: true
             workingDir: "/home/jenkins/agent"
