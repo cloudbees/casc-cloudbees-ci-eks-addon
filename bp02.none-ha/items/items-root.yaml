@@ -17,31 +17,20 @@ items:
                 }
             }
             environment {
-                MAVEN_PROJECT = 'https://github.com/jglick/simple-maven-project-with-tests'
-                CACHE = 'ws-cache-maven'
+                ARTIFACT_SOURCE_JOB = 'upstream-artifact'
             }
             stages {
-                stage('Checkout') {
+                stage('Copy Artifacts') {
                     steps {
-                        git env.MAVEN_PROJECT
+                        sh 'ls -la'
+                        copyArtifacts fingerprintArtifacts: true, projectName: env.ARTIFACT_SOURCE_JOB, selector: lastSuccessful()
                     }
                 }
-                stage('Read') {
+                stage('Read Artifacts') {
                     steps {
-                        readCache name: env.CACHE
+                        sh 'ls -la'
+                        sh 'cat f_2'
                     }
-                }
-                stage('Build') {
-                    steps {
-                        container('maven') {
-                            sh 'mvn clean package -DskipTests -Dmaven.repo.local=./maven-repo'
-                        }
-                    }
-                }
-            }
-            post {
-                success {
-                    writeCache name: env.CACHE, includes: 'maven-repo/**'
                 }
             }
         }
