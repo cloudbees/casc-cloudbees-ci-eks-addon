@@ -1,4 +1,4 @@
 variables:
-  #It requires to be updated in case var suffix is provided in tf files (e.g cbci-bp02-<YOUR-SUFFIX>-s3)
+  #You must update the variable in case a variable suffix is provided in the .tf files (for example, cbci-bp02-<YOUR-SUFFIX>-s3)
   - cbci_s3: cbci-bp02-s3
 

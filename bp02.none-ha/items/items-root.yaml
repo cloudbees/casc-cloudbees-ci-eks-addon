@@ -34,7 +34,7 @@ items:
                 }
             }
         }
-  description: 'This pipeline demostrate the usage of https://plugins.jenkins.io/artifact-manager-s3/ across pipelines'
+  description: 'This pipeline demonstrates the usage of https://plugins.jenkins.io/artifact-manager-s3/ across pipelines.'
   disabled: false
   displayName: downstream-artifact
   resumeBlocked: false
@@ -110,7 +110,7 @@ items:
             }
         }
   disabled: false
-  description: 'This pipeline demostrate the usage of https://plugins.jenkins.io/artifact-manager-s3/ in the same pipeline'
+  description: 'This pipeline demonstrates the usage of https://plugins.jenkins.io/artifact-manager-s3/ in the same pipeline.'
 - kind: pipeline
   name: ws-cache
   concurrentBuild: true
@@ -154,5 +154,5 @@ items:
                 }
             }
         }
-  description: 'This pipeline demostrate the usage of https://docs.cloudbees.com/docs/cloudbees-ci/latest/pipelines/cloudbees-cache-step'
+  description: 'This pipeline demonstrates the usage of https://docs.cloudbees.com/docs/cloudbees-ci/latest/pipelines/cloudbees-cache-step.'
   disabled: false
