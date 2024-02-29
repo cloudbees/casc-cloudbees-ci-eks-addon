@@ -2,7 +2,7 @@
 
 [![gitleaks badge](https://img.shields.io/badge/protected%20by-gitleaks-blue)](https://github.com/zricethezav/gitleaks#pre-commit) [![gitsecrets](https://img.shields.io/badge/protected%20by-gitsecrets-blue)](https://github.com/awslabs/git-secrets)
 
-This repository contains bundles for [Configuration as Code (CasC)](https://docs.cloudbees.com/docs/cloudbees-ci/latest/casc-oc/casc-intro) Controllers and Operations Center.
+This repository contains bundles for CloudBees CI [Configuration as Code (CasC)](https://docs.cloudbees.com/docs/cloudbees-ci/latest/casc-oc/casc-intro) controllers and the operations center.
 
 Plugins and plugin catalogs are curated with the [CloudBees CasC Plugin Catalog and Transitive Dependencies Calculator](https://github.com/kyounger/casc-plugin-dependency-calculation).
 
